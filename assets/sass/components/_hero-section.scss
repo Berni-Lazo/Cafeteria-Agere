@@ -1,0 +1,81 @@
+.hero-section {
+  height: 450px;
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  &__img {
+    height:450px;
+    width: 950px;
+    float: left;
+  }
+
+  &__description {
+    width: 500px;
+    margin: 0;
+    padding: 1em 2.5em;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    left: 450px;
+    height: 140px;
+    display: inline-block;
+  }
+
+
+  &__item {
+    list-style: none;
+    display: inline-block;
+    width: 130px;
+    box-sizing: border-box;
+    vertical-align: text-top;
+
+    h3 {
+      font-size: $x-large;
+    }
+
+    &_lg {
+      @extend .hero-section__item;
+      width: 150px;
+    }
+  }
+
+  &__title {
+    float: left;
+    padding: 3.5em;
+    width: 25%;
+
+    &_big {
+      font-size: $xx-large;
+    }
+
+    &_small {
+      font-size: $large;
+    }
+  }
+
+  &__box-orange {
+    width: 140px;
+    height: 140px;
+    background-color: $flame;
+    position: absolute;
+    right: 20%;
+    bottom: 3%;
+    z-index: 2;
+
+    .fas {
+      position: relative;
+      top: 25%;
+      left: 25%;
+      }
+  }
+
+  &__box-yellow {
+    @extend .hero-section__box-orange;
+    background-color: #F1DD28;
+    bottom: 0;
+    right: 19%;
+    z-index: 1;
+  }
+}

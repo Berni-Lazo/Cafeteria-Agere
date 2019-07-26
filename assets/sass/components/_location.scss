@@ -1,0 +1,43 @@
+.location {
+  height: 300px;
+  position: relative;
+
+  &__text {
+    width: 310px;
+    position: absolute;
+    top: 55px;
+    left: 70px;
+    }
+
+  &__map {
+    width: 400px;
+    position: absolute;
+    top: 40px;
+    left: 430px;
+  }
+
+  &__blue {
+    width: 500px;
+    height: 230px;
+    position: absolute;
+    top: 0;
+    left: 450px;
+    z-index: -1;
+    background-color: $blue-france;
+  }
+
+  &__img1 {
+    position: absolute;
+    right: 0;
+    height: 300px;
+    width: 400px;
+  }
+
+  &__img2 {
+    position: absolute;
+    right: 365px;
+    height: 170px;
+    width: 100px;
+  }
+
+}
